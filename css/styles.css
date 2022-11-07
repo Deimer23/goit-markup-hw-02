@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 body {
   background: #e5e5e5;
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  padding: 0 auto;
 }
-.content-main {
+.index-main {
   display: flex;
   flex-direction: column;
 }
@@ -26,10 +29,13 @@ body {
 .menu ul li a:hover {
   color: #2196f3;
 }
-a:hover {
+.menu ul li a:focus {
+  color: #2196f3;
+}
+.logo a:hover {
   color: #09180b;
 }
-a:focus {
+.logo a:focus {
   color: #09180b;
 }
 a {
@@ -66,8 +72,7 @@ a {
 }
 .title {
   width: 696px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;  
   font-size: 44px;
   font-weight: 900;
   line-height: 60px;
@@ -95,12 +100,21 @@ a {
   color: #2196f3;
   cursor: pointer;
 }
-.skills {
-  display: flex;
-  flex-direction: row-reverse;
+.button:focus {
+  background: #e5e5e5;
+  color: #2196f3;
+}  
+.skills{
+    margin: 0 auto;
 }
-.skills ul li {
-  /* display: inline-flex; */
+.skills ul li{
+    display: inline;
+    padding: 5px;
+}
+.skills ul{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    margin: 0 auto;    
 }
 .our-work {
   display: flex;
@@ -131,10 +145,58 @@ a {
 }
 .footer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: #2f303a;
-  padding-left: 10%;
+  padding-left: 10%;  
 }
 .direction p:hover{
     color: #2196f3;
 }
+.direction p{
+    color: #ffffff;
+}
+.logo-down a:focus{
+    color: #ffffff;
+}
+
+
+
+/* CSS DE LA PÁGINA PORTAFOLIO */
+
+.portafolio-main{
+    display: flex;
+    flex-direction:column; 
+    width: 60%;    
+    margin: 0 auto;
+    align-items: center;
+}
+.menu-second{
+    margin: 0 auto;
+}
+.menu-second ul li{
+    display: inline-block;
+    background-color: #F5F4FA;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.menu-second ul li:hover{
+    background-color: #2193f3;
+}
+.menu-second ul li a:hover{
+    color: #F5F4FA;
+}
+
+.portafolio{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 5px;    
+}
+.social-media{
+    margin-left: 70px;
+    /* margin-top: 10px; */
+}
+.social-media h4{
+    color: white;
+}
+
