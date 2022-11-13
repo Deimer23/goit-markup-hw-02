@@ -2,18 +2,22 @@
 body {
   background: #e5e5e5;
   font-family: "Roboto", sans-serif;
-  margin: 0 auto;
-  padding: 0 auto;
+  
 }
-.index-main {
-  display: flex;
-  flex-direction: column;
+.container{
+    width: 1200px;
+    margin: 0 auto;
 }
 .top-line {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  /* padding-left: 50px; */
+  /* padding-right: 20px; */
   background: #ffffff;
-  padding-left: 10%;
+  margin-bottom: 10px; 
+  /* padding-left: 10%; */
 }
 .logo a {
   font-family: "raleway", sans-serif;
@@ -41,27 +45,23 @@ body {
 a {
   text-decoration: none;
 }
-.menu {
-  margin-top: 10px;
-  margin-left: 30px;
-}
-
 .menu ul li {
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
+  /* padding-right: 10px; */
 }
 .contact {
   display: flex;
   flex-direction: row;
-  margin-left: 30%;
-  margin-top: 10px;
+  column-gap: 10px; 
 }
 .contact p:hover {
   color: #2196f3;
 }
-.contact p {
-  margin-right: 20px;
+.index-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .content-title {
   display: flex;
@@ -69,9 +69,10 @@ a {
   background: #2f303a;
   align-items: center;
   padding-bottom: 20px;
+  width: 1200px;
 }
 .title {
-  width: 696px;
+  width: 700px;
   font-family: "Roboto", sans-serif;  
   font-size: 44px;
   font-weight: 900;
@@ -104,28 +105,22 @@ a {
   background: #e5e5e5;
   color: #2196f3;
 }  
-.skills{
-    margin: 0 auto;
-}
 .skills ul li{
-    display: inline;
-    padding: 5px;
+    display: inline;   
 }
 .skills ul{
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    margin: 0 auto;    
+    display: flex;
+    flex-direction: row;       
+}
+.skills{
+    width: 800px;
 }
 .our-work {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-}
-.title-work {
-  margin: 0 auto;
-}
-.title-team {
-  margin: 0 auto;
+  align-items: center;
+  width: 800px;
+  /* margin: 0 auto; */
 }
 .our-work-1 {
   display: flex;
@@ -134,11 +129,11 @@ a {
 .team {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  align-items: center;  
 }
 .team-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;   
 }
 .team-content p {
   text-align: center;
@@ -147,7 +142,7 @@ a {
   display: flex;
   flex-direction: row;
   background: #2f303a;
-  padding-left: 10%;  
+  padding-left: 100px;  
 }
 .direction p:hover{
     color: #2196f3;
@@ -165,13 +160,9 @@ a {
 
 .portafolio-main{
     display: flex;
-    flex-direction:column; 
-    width: 60%;    
-    margin: 0 auto;
+    flex-direction:column;    
     align-items: center;
-}
-.menu-second{
-    margin: 0 auto;
+    justify-content: center;
 }
 .menu-second ul li{
     display: inline-block;
@@ -190,7 +181,7 @@ a {
 .portafolio{
     display: grid;
     grid-template-columns: 200px 200px 200px;
-    grid-gap: 5px;    
+    gap: 5px;    
 }
 .social-media{
     margin-left: 70px;
